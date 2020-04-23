@@ -1,0 +1,5 @@
+/* pages/My/My.wxss */
+text{
+  font-size: 20px;
+  color: aqua;
+}

@@ -1,0 +1,13 @@
+/* pages/sort.wxss */
+.demo-text-1{
+  background-color: gold;
+}
+.demo-text-2{
+  background-color: green;
+}
+.demo-text-3{
+  background-color: indigo;
+}
+.swiper-item {
+  height: 200px;
+}

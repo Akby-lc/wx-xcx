@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view> -->
+
+  <!-- todolist -->
+  <view style="font-size:30px">
+    ToDoList
+  </view>
+  <view class="nav" >
+    <input type="text" placeholder="请输入你要做的事情" bindinput="inp" value='{{val}}' ></input>
+    <button size="mini" type="primary" bindtap="add" >添加</button>
+  </view>
+  <view class="main" wx:for='{{ list }}' wx:key="index" >
+    <text> {{index+1}} 、 {{ item }} </text>
+    <button size="mini" type="warn" bindtap='del' data-index="{{index}}" > 删除 </button>
+  </view>
+</view>
